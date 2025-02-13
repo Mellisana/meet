@@ -21,7 +21,7 @@ class DataTest {
     }
 
     @Test
-    @DisplayName("Планирование и перепланирование")
+    @DisplayName("Plan")
     void shouldSuccessfulPlanAndReplanMeeting() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
