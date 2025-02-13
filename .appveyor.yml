@@ -11,7 +11,8 @@ build: off
 install:
 
   - java -jar ./artifacts/app-replan-delivery.jar &
-  - chmod +x gradlew
+
 
 build_script:
+  - chmod +x gradlew
   - ./gradlew test --info -Dselenide.headless=true
