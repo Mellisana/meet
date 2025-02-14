@@ -18,7 +18,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
     testImplementation 'com.codeborne:selenide:6.17.2'
     implementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation 'io.github.bonigarcia:webdrivermanager:5.7.0'
+//    testImplementation 'io.github.bonigarcia:webdrivermanager:5.7.0'
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
 
 test {
