@@ -1,11 +1,9 @@
 package ru.netology;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-
 
 import java.time.Duration;
 
@@ -15,6 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 class DataTest {
+
 
     @BeforeEach
     void setup() {
