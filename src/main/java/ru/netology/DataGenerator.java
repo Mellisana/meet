@@ -51,13 +51,6 @@ public class DataGenerator {
         }
 
 
-        @Value
-        public static class UserInfo {
-            String city;
-            String name;
-            String phone;
-        }
-
         public static UserInfo generateUser(String locale) {
 
             String city = generateCity();
@@ -66,6 +59,13 @@ public class DataGenerator {
             return new UserInfo(city, name, phone);
 
 
+        }
+
+        @Value
+        public static class UserInfo {
+            String city;
+            String name;
+            String phone;
         }
     }
 }
