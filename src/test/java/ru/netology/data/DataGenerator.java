@@ -13,8 +13,6 @@ public class DataGenerator {
     }
 
     public static String generateDate(int shift) {
-        // TODO: добавить логику для объявления переменной date и задания её значения, для генерации строки с датой
-        // Вы можете использовать класс LocalDate и его методы для получения и форматирования даты
         return LocalDate.now().plusDays(shift).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
@@ -33,15 +31,11 @@ public class DataGenerator {
     }
 
     public static String generateName(String locale) {
-        // TODO: добавить логику для объявления переменной name и задания её значения, для генерации можно
-        // использовать Faker
         Faker faker = new Faker(new Locale(locale));
         return faker.name().fullName();
     }
 
     public static String generatePhone(String locale) {
-        // TODO: добавить логику для объявления переменной phone и задания её значения, для генерации можно
-        // использовать Faker
         Faker faker = new Faker(new Locale(locale));
         return faker.phoneNumber().phoneNumber();
     }
